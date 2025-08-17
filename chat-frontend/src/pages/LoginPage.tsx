@@ -73,12 +73,12 @@ const LoginPage: React.FC = () => {
             </div>
           </form>
           <div className="text-sm text-center">
-            <button
+            <a
               onClick={() => setIsRegister(!isRegister)}
-              className="font-medium text-indigo-600 hover:text-indigo-500"
+              className="link"
             >
               {isRegister ? '이미 계정이 있으신가요? 로그인' : '계정이 없으신가요? 회원가입'}
-            </button>
+            </a>
           </div>
         </div>
       </div>
