@@ -39,8 +39,9 @@
 
 
 .link {
-    font-size: medium;
+    font-size:smaller;
     text-decoration: underline;
+    margin-top: 20px;
 }
 
 

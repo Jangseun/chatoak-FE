@@ -42,7 +42,7 @@ const LoginPage: React.FC = () => {
               {isRegister ? '회원가입' : '로그인'}
             </h2>
           </div>
-          <form className="mt-[8px]" onSubmit={handleSubmit}>
+          <form className="mt-[20px]" onSubmit={handleSubmit}>
             <Input
               id="username"
               name="username"
@@ -53,6 +53,7 @@ const LoginPage: React.FC = () => {
               placeholder="아이디를 입력하세요"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
+              className="mb-[8px]"
             />
             <Input
               id="password"
@@ -64,6 +65,7 @@ const LoginPage: React.FC = () => {
               placeholder="비밀번호를 입력하세요"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+              className="mb-[8px]"
             />
             {error && <p className="text-red-500 text-sm text-center">{error}</p>}
             <div>
