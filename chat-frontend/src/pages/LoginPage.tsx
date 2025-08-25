@@ -36,8 +36,9 @@ const LoginPage: React.FC = () => {
   return (
     <div className="container">
       <div className='box'> 
-        <div className="w-full h-full">
+        <div className="w-full h-full text-center">
           <div>
+            <img src="/sol_bird.png" alt="sol_bird" className='w-[50%]'/>
             <h2 className="mt-6 text-center text-3xl font-extrabold">
               {isRegister ? '회원가입' : '로그인'}
             </h2>
@@ -49,7 +50,6 @@ const LoginPage: React.FC = () => {
               type="text"
               autoComplete="username"
               required
-              label="아이디"
               placeholder="아이디를 입력하세요"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
@@ -61,7 +61,6 @@ const LoginPage: React.FC = () => {
               type="password"
               autoComplete="current-password"
               required
-              label="비밀번호"
               placeholder="비밀번호를 입력하세요"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
